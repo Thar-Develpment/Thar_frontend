@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .common_section_ {
+    @apply font-bold text-[30px] sm:text-[40px] md:text-[50px] text-[#0c3646];
+  }
+
+  .page-container {
+    @apply max-w-[1500px] mx-auto;
+  }
+  .page-secondary-container {
+    @apply max-w-[1200px] mx-auto;
+  }
+  .page-third-container {
+    @apply max-w-[1000px] mx-auto;
+  }
+
+
+  .page-padding {
+    @apply px-[15px] sm:px-[15px] md:px-[20px] lg:px-[30px] xl:px-[40px];
+  }
+
+  .common_header {
+    @apply text-xl sm:text-2xl md:text-3xl xl:text-4xl text-center;
+  }
+
+  .view_all_btn {
+    @apply px-[17px] py-[10px] sm:px-[20px] sm:py-[10px] md:px-[25px] md:py-[11px] bg-black relative;
+  }
+  .common_image_grid_col{
+    @apply grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-3 sm:gap-x-4 md:gap-x-5 gap-y-3 sm:gap-y-4 md:gap-y-5;
+  }
+  .profileinput{
+    @apply bg-[#ebf0f7] p-2 rounded-md focus-within:outline-none cursor-not-allowed
+  }
+  .position_middle{
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+  }
+}
